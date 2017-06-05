@@ -77,8 +77,8 @@ public class BaseRecyclerViewAdapter extends RecyclerView.Adapter<BaseViewHolder
 
       int sum = 3;
       int[] images = {R.mipmap.ic_launcher_round,R.mipmap.ic_launcher,R.mipmap.ic_launcher_round};
-
-      AddImageViewItemUtils.addImageView(context, holder.linearLayoutHorizontal, sum, images, new ClickListener() {
+      int[] percent = {5,3,2};
+      AddImageViewItemUtils.addImageView(context, holder.linearLayoutHorizontal, sum, images,percent, new ClickListener() {
         @Override public void onClick(View view, int p) {
           Toast.makeText(context,position+ "-->" + p,Toast.LENGTH_SHORT).show();
         }
@@ -89,8 +89,9 @@ public class BaseRecyclerViewAdapter extends RecyclerView.Adapter<BaseViewHolder
 
       int sum = 2;
       int[] images = {R.mipmap.ic_launcher,R.mipmap.ic_launcher_round};
+      int[] percent = {6,4};
 
-      AddImageViewItemUtils.addImageView(context, holder.linearLayoutHorizontal, sum, images, new ClickListener() {
+      AddImageViewItemUtils.addImageView(context, holder.linearLayoutHorizontal, sum, images,percent, new ClickListener() {
         @Override public void onClick(View view, int p) {
           Toast.makeText(context,position+ "-->" + p,Toast.LENGTH_SHORT).show();
         }
